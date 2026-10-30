@@ -1,0 +1,274 @@
+/* ----------------------------------
+   VARIABLES Y RESETEO GENERAL
+---------------------------------- */
+:root {
+    --verde-brand: #39a95e;       /* Verde exacto de tu logo */
+    --gris-header: #636c74;       /* Gris grafito (~#666) */
+    --gris-fondo: #f2f0ef;        /* Fondo claro general */
+    --texto-oscuro: #1e252b;      /* Color principal de texto */
+    --rojo-ofertas: #c02b2b;      /* Rojo para ofertas y precios */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto-oscuro);
+}
+
+/* ----------------------------------
+   HEADER (Franja al 100% de ancho)
+---------------------------------- */
+header {
+    background-color: var(--gris-header);
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor interno centrado */
+.contenedorHeader {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logoHeader img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+#navHeader {
+    display: flex;
+    gap: 35px;
+}
+
+#navHeader a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.2s, border-color 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+}
+
+#navHeader a:hover {
+    color: var(--verde-brand);
+    border-bottom-color: var(--verde-brand);
+}
+
+#iconosHeader {
+    display: flex;
+    gap: 20px;
+}
+
+#iconosHeader a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+#iconosHeader a:hover {
+    color: var(--verde-brand);
+    transform: scale(1.1);
+}
+
+/* --- BARRA DE BÚSQUEDA --- */
+.buscadorHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.buscadorHeader .iconoLupa {
+    position: absolute;
+    left: calc(50% - 210px + 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 0.95rem;
+    pointer-events: none;
+}
+
+.buscadorHeader input[type="search"] {
+    width: 420px;
+    padding: 10px 20px 10px 42px;
+    border: 2px solid #888;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.buscadorHeader input[type="search"]:focus {
+    border-color: var(--verde-brand);
+    box-shadow: 0 4px 14px rgba(57, 169, 94, 0.35);
+    width: 450px;
+}
+
+/* ----------------------------------
+   MAIN / PRODUCTOS
+---------------------------------- */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccionProductos {
+    margin-bottom: 50px;
+}
+
+.cabeceraSeccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+#enlaceProductosDestacados,
+#enlaceOfertas {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+#enlaceProductosDestacados {
+    color: var(--verde-brand);
+}
+
+#enlaceOfertas {
+    color: var(--rojo-ofertas);
+}
+
+.verTodo {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Grid de 4 columnas */
+.gridProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.datosProducto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+.datosProducto h2 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--texto-oscuro);
+}
+
+.separador {
+    color: #777;
+}
+
+.precio {
+    font-weight: 800;
+    color: var(--rojo-ofertas);
+}
+
+/* ----------------------------------
+   FOOTER (Franja al 100% de ancho)
+---------------------------------- */
+footer {
+    background-color: var(--gris-header);
+    color: #f0f0f0;
+    width: 100%;
+    margin-top: 60px;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.sobreNostrosFooter {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobreNostrosFooter p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.sobreNostrosFooter b {
+    color: #ffffff;
+}
+
+.contactoFooter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.iconoFooterContacto img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Convierte los iconos a blanco */
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.iconoFooterContacto img:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
+@media (max-width: 900px) {
+    .gridProductos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
