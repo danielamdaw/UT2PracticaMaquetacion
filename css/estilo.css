@@ -164,6 +164,25 @@ nav a {
     transform: scale(1.08);
 }
 
+#iconosHeader .botonTema {
+    min-height: 2.5rem;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    background: transparent;
+    color: #FFFFFF;
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#iconosHeader .botonTema:hover,
+#iconosHeader .botonTema:focus-visible {
+    background-color: var(--color-verde);
+    color: #FFFFFF;
+}
+
 .buscadorHeader {
     position: relative;
     display: flex;
@@ -451,7 +470,7 @@ button:active {
     min-height: calc(100vh - var(--height-nav));
     place-items: center;
     padding: clamp(2rem, 6vw, 5rem);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.12)), url("../img/PCSobremesaGaming.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.12)), url("../img/BannerCTA.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

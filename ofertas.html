@@ -7,7 +7,8 @@
     <title>Ofertas | SecondLife Tech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="alternate stylesheet" title="Alto contraste" href="css/alto-contraste.css">
+    <link rel="alternate stylesheet" title="Alto contraste" href="css/alto-contraste.css" id="hojaAltoContraste" disabled>
+    <script src="js/tema.js" defer></script>
     </head>
 <body class="pagina-ofertas">
     <header>
@@ -30,6 +31,7 @@
                 <a href="carrito.html" aria-label="Carrito">
                     <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                 </a>
+                <button class="botonTema" type="button" data-conmutar-tema aria-pressed="false">Alto contraste</button>
             </div>
 
             <form class="buscadorHeader" action="listado.html" method="get" role="search">

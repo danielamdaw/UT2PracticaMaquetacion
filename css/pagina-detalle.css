@@ -1,16 +1,21 @@
 /* Redefiniciones específicas de la ficha de producto.
-   Esta hoja se carga después de estilo.css. */
+   Esta hoja se carga después de estilo.css.
+   En los tres ejemplos, el selector más específico gana; el orden posterior también resolvería empates. */
+
+/* 1) (0,2,2) vence a .infoProducto h1 (0,1,1): cambia el título de la ficha. */
 body.pagina-detalle .infoProducto h1 {
     color: var(--color-verde);
     font-size: 2.4rem;
     letter-spacing: 0.01em;
 }
 
+/* 2) (0,3,1) vence a .infoProducto .precio (0,2,0): aplica el estilo del precio de compra. */
 body.pagina-detalle .bloqueCompra .precio {
     color: var(--color-texto);
     font-size: 2rem;
 }
 
+/* 3) (0,2,1) vence a .btnCarrito (0,1,0): amplía y redondea el botón de esta ficha. */
 body.pagina-detalle .btnCarrito {
     min-height: 3rem;
     padding-inline: 2rem;
