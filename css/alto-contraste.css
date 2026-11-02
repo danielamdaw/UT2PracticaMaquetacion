@@ -1,0 +1,101 @@
+/* Tema alternativo de alto contraste */
+:root {
+    --color-verde: #00FF7F;
+    --color-rojo: #FF6B6B;
+    --color-fondo: #000000;
+    --color-superficie: #111111;
+    --color-texto: #FFFFFF;
+    --color-header: #000000;
+    --color-borde: #FFFFFF;
+    --color-verde-claro: #101010;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+header,
+footer {
+    border-color: #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+nav a,
+#iconosHeader a,
+.sobreNostrosFooter p,
+.sobreNostrosFooter strong {
+    color: #FFFFFF;
+}
+
+a,
+#enlaceProductosDestacados,
+#enlaceOfertas,
+.pagina-listado #tituloMoviles,
+.pagina-listado #productosDestacados,
+.infoProducto .precio,
+.precio {
+    color: #00FF7F;
+}
+
+.tarjeta img,
+.categoriasMarcas a,
+.tarjetaCarrito,
+.imagenProducto,
+.galeriaProducto,
+form:not(.buscadorHeader),
+form:not(.buscadorHeader) input:not([type="checkbox"]),
+form:not(.buscadorHeader) textarea,
+.buscadorHeader input[type="search"] {
+    border-color: #FFFFFF;
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.bloqueContacto,
+.bloqueCompra,
+.descripcionProducto,
+.resumenCompra {
+    border-color: #00FF7F;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+button,
+.boton,
+.btn,
+.btnCarrito,
+main button,
+.opcionesAcceso button {
+    border: 2px solid #FFFF00;
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+button:hover,
+.boton:hover,
+.btn:hover,
+.btnCarrito:hover,
+main button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline-color: #FFFF00;
+}
+
+::placeholder {
+    color: #DDDDDD;
+    opacity: 1;
+}
+
+.mark,
+mark {
+    background-color: #FFFF00;
+    color: #000000;
+}

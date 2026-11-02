@@ -1,0 +1,23 @@
+/* Redefiniciones específicas de la ficha de producto.
+   Esta hoja se carga después de estilo.css. */
+body.pagina-detalle .infoProducto h1 {
+    color: var(--color-verde);
+    font-size: 2.4rem;
+    letter-spacing: 0.01em;
+}
+
+body.pagina-detalle .bloqueCompra .precio {
+    color: var(--color-texto);
+    font-size: 2rem;
+}
+
+body.pagina-detalle .btnCarrito {
+    min-height: 3rem;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+
+body.pagina-detalle .btnCarrito:hover {
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.35);
+}
