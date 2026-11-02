@@ -11,7 +11,6 @@
     try {
         contrasteActivo = window.localStorage.getItem(clavePreferencia) === "true";
     } catch (error) {
-        // La página sigue permitiendo cambiar el tema aunque el navegador bloquee el almacenamiento.
     }
 
     const actualizarTema = () => {
@@ -35,7 +34,6 @@
         try {
             window.localStorage.setItem(clavePreferencia, String(contrasteActivo));
         } catch (error) {
-            // El cambio de tema continúa activo en esta página.
         }
     });
 })();

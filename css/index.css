@@ -1,12 +1,10 @@
-/* ----------------------------------
-   VARIABLES Y RESETEO GENERAL
----------------------------------- */
+
 :root {
-    --verde-brand: #39a95e;       /* Verde exacto de tu logo */
-    --gris-header: #636c74;       /* Gris grafito (~#666) */
-    --gris-fondo: #f2f0ef;        /* Fondo claro general */
-    --texto-oscuro: #1e252b;      /* Color principal de texto */
-    --rojo-ofertas: #c02b2b;      /* Rojo para ofertas y precios */
+    --verde-brand: #39a95e;       
+    --gris-header: #636c74;      
+    --gris-fondo: #f2f0ef;       
+    --texto-oscuro: #1e252b;     
+    --rojo-ofertas: #c02b2b;     
 }
 
 * {
@@ -21,9 +19,7 @@ body {
     color: var(--texto-oscuro);
 }
 
-/* ----------------------------------
-   HEADER (Franja al 100% de ancho)
----------------------------------- */
+
 header {
     background-color: var(--gris-header);
     width: 100%;
@@ -31,7 +27,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* Contenedor interno centrado */
+
 .contenedorHeader {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,9 +117,7 @@ header {
     width: 450px;
 }
 
-/* ----------------------------------
-   MAIN / PRODUCTOS
----------------------------------- */
+
 main {
     max-width: 1200px;
     margin: 40px auto;
@@ -216,9 +210,7 @@ main {
     color: var(--rojo-ofertas);
 }
 
-/* ----------------------------------
-   FOOTER (Franja al 100% de ancho)
----------------------------------- */
+
 footer {
     background-color: var(--gris-header);
     color: #f0f0f0;
@@ -363,9 +355,7 @@ main button:hover,
     object-fit: contain;
 }
 
-/* ----------------------------------
-   RESPONSIVE
----------------------------------- */
+
 @media (max-width: 900px) {
     .gridProductos {
         grid-template-columns: repeat(2, 1fr);
