@@ -1,38 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar sesión | SecondLife Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <form>
-
-        <label for="correoIE">Corrreo:</label>
-        <input type="email" id="correoIE" name="correoIE" required>
-        <br><br>
-        <label for="passIE">Contraseña:</label>
-        <input type="password" id="passIE" name="passIE" required>
-        <br><br>
-        <input type="submit" value="Inicar Sesion" id="btnIniciarSesion">
-        <br><br>
-        </form>
-        <div>
-            <p>Se te ha olvidado la contraseña ? <a href="">Cambiar Contraseña</a></p>
-            <p>No tienes cuenta ? <a href="">Registrarse</a></p>
+    <header>
+        <div class="contenedorHeader">
+            <div id="logoHeader">
+                <a href="index.html" title="Volver al inicio">
+                    <img src="img/logo.png" alt="Logo de SecondLife Tech" title="SecondLife Tech">
+                </a>
+            </div>
+            <nav id="navHeader" aria-label="Categorías principales">
+                <a href="listado.html">Móviles</a>
+                <a href="ofertas.html#ordenadores">Ordenadores</a>
+                <a href="ofertas.html#consolas">Consolas</a>
+                <a href="ofertas.html#accesorios">Accesorios</a>
+            </nav>
+            <nav id="iconosHeader" aria-label="Acceso a cuenta y carrito">
+                <a href="formulario.html" aria-label="Iniciar sesión"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                <a href="carrito.html" aria-label="Carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+            </nav>
+            <form class="buscadorHeader" action="listado.html" method="get" role="search">
+                <i class="fa-solid fa-magnifying-glass iconoLupa" aria-hidden="true"></i>
+                <input type="search" name="q" placeholder="Buscar productos, marcas y más..." aria-label="Buscar productos, marcas y más">
+            </form>
         </div>
+    </header>
 
+    <main>
+        <section aria-labelledby="tituloAcceso">
+            <h1 id="tituloAcceso">Iniciar sesión</h1>
 
-        <div>
-            <a href="">Continuar con Google
-                <img src="img/iconoGoogle.png" alt="">
-            </a>
-            <br><br>    
-            <a href="">Continuar con Apple
-                <img src="img/iconoApple.png" alt="">
-            </a>
-        </div>
+            <form class="formularioAcceso" action="#" method="post">
+                <label for="correoIE">Correo electrónico:</label>
+                <input type="email" id="correoIE" name="correoIE" autocomplete="email" title="Introduce tu correo electrónico" required>
 
+                <label for="passIE">Contraseña:</label>
+                <input type="password" id="passIE" name="passIE" autocomplete="current-password" title="Introduce tu contraseña" required>
 
+                <button type="submit" id="btnIniciarSesion">Continuar</button>
+            </form>
+
+            <section class="opcionesAcceso" aria-label="Ayuda y otras opciones de acceso">
+                <p>¿Has olvidado la contraseña? <a href="contacto.html">Contacta con nosotros</a></p>
+                <p>¿No tienes cuenta? <a href="registro.html">Registrarse</a></p>
+
+                <h2>O continúa con</h2>
+                <button type="button" title="Continuar con Google">
+                    <img src="img/iconoGoogle.png" alt="Google">
+                    Continuar con Google
+                </button>
+                <button type="button" title="Continuar con Apple">
+                    <img src="img/iconoApple.png" alt="Apple">
+                    Continuar con Apple
+                </button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="sobreNostrosFooter" aria-label="Sobre nosotros">
+            <p>Somos una empresa dedicada a dar una <em>segunda vida</em> a los dispositivos que todavía la merecen.</p>
+            <p>Esta idea surgió debido a un proyecto en común de varios compañeros de clase, porque queríamos reducir los residuos causados en el sector informático.</p>
+            <p><strong>2026 | Todos los derechos reservados | SecondLife Tech</strong></p>
+        </section>
+        <section class="contactoFooter" aria-label="Redes sociales y contacto">
+            <a class="iconoFooterContacto" href="https://www.instagram.com/" aria-label="Instagram"><img src="img/iconoInstagram.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.youtube.com/" aria-label="YouTube"><img src="img/IconoYoutube.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.tiktok.com/" aria-label="TikTok"><img src="img/IconoTikTok.png" alt=""></a>
+            <a class="iconoFooterContacto" href="mailto:secondlife_tech@gmail.com" aria-label="Enviar un correo"><img src="img/iconoEmail.png" alt=""></a>
+            <a class="iconoFooterContacto" href="tel:+34917377399" aria-label="Llamar por teléfono"><img src="img/iconoTelefono.png" alt=""></a>
+        </section>
+    </footer>
 </body>
 </html>
