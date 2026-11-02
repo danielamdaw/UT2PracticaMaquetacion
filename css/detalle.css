@@ -31,14 +31,36 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 #logoHeader img {
     width: 140px;
     height: auto;
     display: block;
+}
+
+#navHeader {
+    display: flex;
+    gap: 28px;
+}
+
+#navHeader a {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+#navHeader a:hover {
+    color: var(--verde-brand);
+    border-bottom-color: var(--verde-brand);
 }
 
 #iconosHeader {
@@ -186,7 +208,7 @@ main {
     border-radius: 0 8px 8px 0;
 }
 
-.descripcionProducto h3 {
+.descripcionProducto h2 {
     font-size: 1.05rem;
     font-weight: 700;
     margin-bottom: 8px;
@@ -220,7 +242,8 @@ footer {
     color: #e0e0e0;
 }
 
-.sobreNostrosFooter b {
+.sobreNostrosFooter b,
+.sobreNostrosFooter strong {
     color: #ffffff;
 }
 
@@ -245,6 +268,11 @@ footer {
 }
 
 @media (max-width: 850px) {
+    #navHeader,
+    .buscadorHeader {
+        display: none;
+    }
+
     .detalleProducto {
         flex-direction: column;
         gap: 30px;

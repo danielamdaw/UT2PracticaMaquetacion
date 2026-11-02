@@ -1,35 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito | SecondLife Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="contenedorHeader">
+            <div id="logoHeader">
+                <a href="index.html" title="Volver al inicio">
+                    <img src="img/logo.png" alt="Logo de SecondLife Tech" title="SecondLife Tech">
+                </a>
+            </div>
+
+            <nav id="navHeader" aria-label="Categorías principales">
+                <a href="listado.html">Móviles</a>
+                <a href="ofertas.html#ordenadores">Ordenadores</a>
+                <a href="ofertas.html#consolas">Consolas</a>
+                <a href="ofertas.html#accesorios">Accesorios</a>
+            </nav>
+
+            <nav id="iconosHeader" aria-label="Acceso a cuenta y carrito">
+                <a href="formulario.html" aria-label="Contacto o cuenta"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                <a href="carrito.html" aria-label="Carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+            </nav>
+
+            <form class="buscadorHeader" action="listado.html" method="get" role="search">
+                <label for="busqueda">Buscar productos</label>
+                <input id="busqueda" name="q" type="search" placeholder="Buscar productos, marcas y más...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
     <main>
-            <article class="tarjetaCarrito">
-                <img src="img/iphone15.jpg" alt="Iphone 15" width="50px">
-                <div class="datosProductoCarrito">
-                    <h2>Iphone 15   -  </h2>
-                    <p class="precio">450€</p>
-                </div>
-            <article class="tarjetaCarrito">
-                <img src="img/switch2.jpg" alt="Nintendo Switch 2" width="50px">
-                <div class="datosProductoCarrito">
-                    <h2>Nintendo Switch 2   -  </h2>
-                    <p class="precio">340$</p>
-                </div>
-            </article>
-            <article class="tarjetaCarrito">
-                <img src="img/airpods.jpg" alt="Airpods" width="50px">
-                <div class="datosProductoCarrito">
-                    <h2>AirPods   -  </h2>
-                    <p class="precio">170$</p>
-                </div>
-            </article>
-            <br><br>
-            <button type="submit" id="btnCarrito">Comprar </button>
-            <h5 id="totalCarrito">Total: 1040 €</h5>
-        </main>
+        <section aria-labelledby="tituloCarrito">
+            <h1 id="tituloCarrito">Carrito de compra</h1>
+
+            <div class="productosCarrito">
+                <article class="tarjetaCarrito">
+                    <img src="img/iphone15.jpg" alt="iPhone 15" title="Móvil Apple iPhone 15" width="80" height="80">
+                    <div class="datosProductoCarrito">
+                        <h2>iPhone 15</h2>
+                        <p class="precio"><data value="450.00">450 €</data></p>
+                    </div>
+                </article>
+
+                <article class="tarjetaCarrito">
+                    <img src="img/play5.jpg" alt="PlayStation 5" title="Consola PlayStation 5" width="80" height="80">
+                    <div class="datosProductoCarrito">
+                        <h2>PlayStation 5</h2>
+                        <p class="precio"><data value="420.00">420 €</data></p>
+                    </div>
+                </article>
+
+                <article class="tarjetaCarrito">
+                    <img src="img/airpods.jpg" alt="Auriculares Apple AirPods" title="Apple AirPods" width="80" height="80">
+                    <div class="datosProductoCarrito">
+                        <h2>AirPods</h2>
+                        <p class="precio"><data value="170.00">170 €</data></p>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="resumenCompra" aria-label="Resumen de compra">
+                <p>Total: <strong><data value="1040.00">1040 €</data></strong></p>
+                <button type="button">Comprar</button>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <section class="sobreNostrosFooter" aria-label="Sobre nosotros">
+            <p>Somos una empresa dedicada a dar una <em>segunda vida</em> a los dispositivos que todavía la merecen.</p>
+            <p>Esta idea surgió debido a un proyecto en común de varios compañeros de clase, porque queríamos reducir los residuos causados en el sector informático.</p>
+            <p><strong>2026 | Todos los derechos reservados | SecondLife Tech</strong></p>
+        </section>
+        <section class="contactoFooter" aria-label="Redes sociales y contacto">
+            <a class="iconoFooterContacto" href="https://www.instagram.com/" aria-label="Instagram"><img src="img/iconoInstagram.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.youtube.com/" aria-label="YouTube"><img src="img/IconoYoutube.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.tiktok.com/" aria-label="TikTok"><img src="img/IconoTikTok.png" alt=""></a>
+            <a class="iconoFooterContacto" href="mailto:secondlife_tech@gmail.com" aria-label="Enviar un correo"><img src="img/iconoEmail.png" alt=""></a>
+            <a class="iconoFooterContacto" href="tel:+34917377399" aria-label="Llamar por teléfono"><img src="img/iconoTelefono.png" alt=""></a>
+        </section>
+    </footer>
 </body>
 </html>

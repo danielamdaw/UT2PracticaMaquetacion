@@ -5,67 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayStation 5 - SecondLife Tech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/detalle.css">
 </head>
-<body>
-    <header>
+<body style="background-color: #f2f0ef; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #1e252b;">
+    <header style="background-color: #636c74;">
         <div class="contenedorHeader">
             <div id="logoHeader">
-                <a href="index.html"><img src="img/logo.png" alt="Logo Empresa"></a>
-            </div>
-            
-            <div class="buscadorHeader">
-                <i class="fa-solid fa-magnifying-glass iconoLupa"></i>
-                <input type="search" placeholder="Buscar productos, marcas y más...">
+                <a href="index.html" title="Volver al inicio"><img src="img/logo.png" alt="Logo Empresa" title="SecondLife Tech"></a>
             </div>
 
-            <div id="iconosHeader">
-                <a href="" aria-label="Contacto/Cuenta"><i class="fa-regular fa-user"></i></a>
-                <a href="" aria-label="Carrito"><i class="fa-solid fa-cart-shopping"></i></a>  
-            </div>
+            <nav id="navHeader" aria-label="Categorías principales">
+                <a href="listado.html">Móviles</a>
+                <a href="ofertas.html#ordenadores">Ordenadores</a>
+                <a href="ofertas.html#consolas">Consolas</a>
+                <a href="ofertas.html#accesorios">Accesorios</a>
+            </nav>
+            
+            <form class="buscadorHeader" action="listado.html" method="get" role="search">
+                <i class="fa-solid fa-magnifying-glass iconoLupa" aria-hidden="true"></i>
+                <input type="search" name="q" placeholder="Buscar productos, marcas y más..." title="Buscar productos, marcas y más" aria-label="Buscar productos, marcas y más">
+            </form>
+
+            <nav id="iconosHeader" aria-label="Acceso a cuenta y carrito">
+                <a href="formulario.html" aria-label="Contacto/Cuenta"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                <a href="carrito.html" aria-label="Carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="detalleProducto">
-            <div class="imagenProducto">
-                <img src="img/play5.jpg" alt="PlayStation 5">
-            </div>
+        <article class="detalleProducto" style="gap: 40px;">
+            <section class="imagenProducto" aria-label="Imagen del producto">
+                <img src="img/play5.jpg" alt="PlayStation 5, consola blanca con mando inalámbrico" title="Consola PlayStation 5" style="object-fit: contain;">
+            </section>
 
-            <div class="infoProducto">
-                <h1>Play Station 5</h1>
+            <section class="infoProducto" aria-labelledby="tituloProducto">
+                <h1 id="tituloProducto" title="Consola reacondicionada" style="color: #1e252b; font-size: 2rem;">PlayStation 5</h1>
 
-                <div class="bloqueCompra">
+                <aside class="bloqueCompra" aria-label="Información de compra" style="padding: 16px; border-radius: 8px; background-color: #eaf6ee;">
                     <div class="bloquePrecio">
-                        <p class="precio">450€</p>
+                        <p class="precio"><strong style="color: #39a95e; font-size: 1.5rem;">420€</strong></p>
                         <span class="iva">IVA Incluido</span>
                     </div>
-                    <button class="btnCarrito">Añadir al carrito</button>
-                </div>
+                    <button class="btnCarrito" title="Añadir la PlayStation 5 al carrito" style="padding: 12px 20px; border: 0; border-radius: 6px; background-color: #39a95e; color: #ffffff; font-weight: 700;">Añadir al carrito</button>
+                </aside>
 
-                <div class="descripcionProducto">
-                    <h3>Descripción del reacondicionador:</h3>
+                <section class="descripcionProducto" aria-labelledby="tituloDescripcion">
+                    <h2 id="tituloDescripcion" style="margin-bottom: 8px; color: #39a95e; font-size: 1.05rem; font-weight: 700;">Descripción del reacondicionador:</h2>
                     <p>
-                        Producto reacondicionado, probado y cuidadosamente limpio. 100 % funcional y revisado para garantizar su correcto funcionamiento. Incluye: mando oficial, cable de alimentación, cable HDMI y cable de carga para el mando. Estado correcto: el producto puede presentar arañazos, marcas de uso o impactos visibles, sin afectar a su funcionamiento. Se vende sin la caja original. Modelo STANDARD y SLIM.
+                        Producto reacondicionado, probado y cuidadosamente limpio. <strong>100 % funcional</strong> y revisado para garantizar su correcto funcionamiento. Incluye: mando oficial, cable de alimentación, cable HDMI y cable de carga para el mando. <em>Estado correcto:</em> el producto puede presentar arañazos, marcas de uso o impactos visibles, sin afectar a su funcionamiento. Se vende sin la caja original. Modelo <mark style="background-color: #eaf6ee; color: #1e252b;">STANDARD y SLIM</mark>.
                     </p>
-                </div>
-            </div>
-        </section>
+                </section>
+            </section>
+        </article>
     </main>
 
     <footer>
         <section class="sobreNostrosFooter">
-            <p>Somos una empresa dedicada a dar una segunda vida a los dispositivos que todavía la merecen</p>
+            <p>Somos una empresa dedicada a dar una <em>segunda vida</em> a los dispositivos que todavía la merecen</p>
             <p>Esta idea surgió debido a un proyecto en común de varios compañeros de clase, porque queríamos reducir los residuos causados en el sector informático.</p>
-            <p><b>2026 | Todos los derechos reservados | SecondLife Tech</b></p>
+            <p><strong>2026 | Todos los derechos reservados | SecondLife Tech</strong></p>
         </section>
         
         <section class="contactoFooter">
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoInstagram.png" alt="Instagram"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/IconoYoutube.png" alt="Youtube"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/IconoTikTok.png" alt="TikTok"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoEmail.png" alt="Email"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoTelefono.png" alt="Telefono"></a>
+            <a class="iconoFooterContacto" href="https://www.instagram.com/" aria-label="Instagram"><img src="./img/iconoInstagram.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.youtube.com/" aria-label="YouTube"><img src="./img/IconoYoutube.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.tiktok.com/" aria-label="TikTok"><img src="./img/IconoTikTok.png" alt=""></a>
+            <a class="iconoFooterContacto" href="mailto:secondlife_tech@gmail.com" aria-label="Enviar un correo"><img src="./img/iconoEmail.png" alt=""></a>
+            <a class="iconoFooterContacto" href="tel:+34917377399" aria-label="Llamar por teléfono"><img src="./img/iconoTelefono.png" alt=""></a>
         </section>
     </footer>
 </body>

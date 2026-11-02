@@ -6,45 +6,45 @@
     <title>Inicio-SecondLife Tech</title>
     <!-- Incluimos Font Awesome para la lupa, el usuario y el carrito -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+
 </head>
-<body>
-    <header>
+<body style="background-color: #f2f0ef; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #1e252b;">
+    <header style="background-color: #636c74;">
         <div class="contenedorHeader">
         <div id="logoHeader">
-            <img src="img/logo.png" alt="Logo Empresa">
+            <img src="img/logo.png" alt="Logo Empresa" title="SecondLife Tech">
         </div>
         
-        <nav id="navHeader">
-            <a href="">Móviles</a>
-            <a href="">Ordenadores</a>
-            <a href="">Consolas</a>
-            <a href="">Accesorios</a>
+        <nav id="navHeader" aria-label="Categorías principales">
+            <a href="listado.html" style="color: #ffffff; font-family: 'Segoe UI', sans-serif;">Móviles</a>
+            <a href="ofertas.html#ordenadores" style="color: #ffffff; font-family: 'Segoe UI', sans-serif;">Ordenadores</a>
+            <a href="ofertas.html#consolas" style="color: #ffffff; font-family: 'Segoe UI', sans-serif;">Consolas</a>
+            <a href="ofertas.html#accesorios" style="color: #ffffff; font-family: 'Segoe UI', sans-serif;">Accesorios</a>
         </nav>
 
-        <div id="iconosHeader">
-            <a href="" aria-label="Contacto/Cuenta"><i class="fa-regular fa-user"></i></a>
-            <a href="" aria-label="Carrito"><i class="fa-solid fa-cart-shopping"></i></a>  
-        </div>
+        <nav id="iconosHeader" aria-label="Acceso a cuenta y carrito">
+            <a href="formulario.html" aria-label="Contacto/Cuenta"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+            <a href="carrito.html" aria-label="Carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+        </nav>
 
-        <div class="buscadorHeader">
-            <i class="fa-solid fa-magnifying-glass iconoLupa"></i>
-            <input type="search" placeholder="Buscar productos, marcas y más...">
-        </div>
+        <form class="buscadorHeader" action="listado.html" method="get" role="search">
+            <i class="fa-solid fa-magnifying-glass iconoLupa" aria-hidden="true"></i>
+            <input type="search" name="q" placeholder="Buscar productos, marcas y más..." title="Buscar productos, marcas y más" aria-label="Buscar productos, marcas y más">
+        </form>
         </div>
     </header>
 
     <main>
         <!-- SECCIÓN DESTACADOS -->
-        <section id="divProductosDestacados" class="seccionProductos">
+        <section id="divProductosDestacados" class="seccionProductos" style="margin-bottom: 50px;">
             <div class="cabeceraSeccion">
-                <a href="" id="enlaceProductosDestacados">Productos Destacados</a>
-                <a href="" class="verTodo">Ver Todo...</a>
+                <h1><a href="listado.html" id="enlaceProductosDestacados" style="color: #39a95e; font-size: 2.2rem;">Productos Destacados</a></h1>
+                <a href="listado.html" class="verTodo" style="color: #1e252b;">Ver Todo...</a>
             </div>
             
             <div class="gridProductos">
                 <article class="tarjeta">
-                    <img src="img/iphone15.jpg" alt="Iphone 15">
+                    <img src="img/iphone15.jpg" alt="iPhone 15" title="Móvil Apple iPhone 15">
                     <div class="datosProducto">
                         <h2>Iphone 15</h2>
                         <span class="separador">-</span>
@@ -52,7 +52,7 @@
                     </div>
                 </article>
                 <article class="tarjeta">
-                    <img src="img/play5.jpg" alt="Play Station 5">
+                    <img src="img/play5.jpg" alt="PlayStation 5" title="Consola PlayStation 5">
                     <div class="datosProducto">
                         <h2>Play Station 5</h2>
                         <span class="separador">-</span>
@@ -79,10 +79,10 @@
         </section>
 
         <!-- SECCIÓN OFERTAS -->
-        <section id="productosOfertas" class="seccionProductos">
+        <section id="productosOfertas" class="seccionProductos" style="margin-bottom: 50px;">
             <div class="cabeceraSeccion">
-                <a href="" id="enlaceOfertas">Ofertas</a>
-                <a href="" class="verTodo">Ver Todo...</a>
+                <h2><a href="ofertas.html" id="enlaceOfertas"><mark style="background-color: #fbe9e9; color: inherit; padding: 0 3px;">Ofertas</mark></a></h2>
+                <a href="ofertas.html" class="verTodo">Ver Todo...</a>
             </div>
 
             <div class="gridProductos">
@@ -124,17 +124,17 @@
 
     <footer>
         <section class="sobreNostrosFooter">
-            <p>Somos una empresa dedicada a dar una segunda vida a los dispositivos que todavía la merecen</p>
+            <p>Somos una empresa dedicada a dar una <em>segunda vida</em> a los dispositivos que todavía la merecen.</p>
             <p>Esta idea surgió debido a un proyecto en común de varios compañeros de clase, porque queríamos reducir los residuos causados en el sector informático.</p>
-            <p><b>2026 | Todos los derechos reservados | SecondLife Tech</b></p>
+            <p><strong>2026 | Todos los derechos reservados | SecondLife Tech</strong></p>
         </section>
         
         <section class="contactoFooter">
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoInstagram.png" alt="Instagram"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/IconoYoutube.png" alt="Youtube"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/IconoTikTok.png" alt="TikTok"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoEmail.png" alt="Email"></a>
-            <a class="iconoFooterContacto" href=""><img src="./img/iconoTelefono.png" alt="Telefono"></a>
+            <a class="iconoFooterContacto" href="https://www.instagram.com/" aria-label="Instagram"><img src="./img/iconoInstagram.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.youtube.com/" aria-label="YouTube"><img src="./img/IconoYoutube.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.tiktok.com/" aria-label="TikTok"><img src="./img/IconoTikTok.png" alt=""></a>
+            <a class="iconoFooterContacto" href="mailto:secondlife_tech@gmail.com" aria-label="Enviar un correo"><img src="./img/iconoEmail.png" alt=""></a>
+            <a class="iconoFooterContacto" href="tel:+34917377399" aria-label="Llamar por teléfono"><img src="./img/iconoTelefono.png" alt=""></a>
         </section>
     </footer>
 </body>

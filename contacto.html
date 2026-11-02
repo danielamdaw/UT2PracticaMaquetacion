@@ -1,42 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | SecondLife Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <h2>CONTACTANOS !!</h2>
-
-    <form>
-        <label for="contactoCorreo">Correo:</label>
-        <input type="email" name="contactoCorreo" id="contactoCorreo">
-        <br><br>
-        <label for="mensaje">Esciba su mensaje:</label>
-        <br><br>
-        <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea>
-        <br><br>
-        <button type="submit">Enviar</button>
-        <br><br>
-        <div>
-            <a href="">
-                <img src="img/iconoEmail.png" alt="">
-            </a>
-            <p>secondlife_tech@gmail.com</p>
-            <br><br>  
-            <a href="">  
-                <img src="img/iconoTelefono.png" alt="">
-            </a>
-            <p>917 37 73 99</p>
+    <header>
+        <div class="contenedorHeader">
+            <div id="logoHeader">
+                <a href="index.html" title="Volver al inicio">
+                    <img src="img/logo.png" alt="Logo de SecondLife Tech" title="SecondLife Tech">
+                </a>
+            </div>
+            <nav id="navHeader" aria-label="Categorías principales">
+                <a href="listado.html">Móviles</a>
+                <a href="ofertas.html#ordenadores">Ordenadores</a>
+                <a href="ofertas.html#consolas">Consolas</a>
+                <a href="ofertas.html#accesorios">Accesorios</a>
+            </nav>
+            <nav id="iconosHeader" aria-label="Acceso a cuenta y carrito">
+                <a href="formulario.html" aria-label="Iniciar sesión"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                <a href="carrito.html" aria-label="Carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+            </nav>
+            <form class="buscadorHeader" action="listado.html" method="get" role="search">
+                <i class="fa-solid fa-magnifying-glass iconoLupa" aria-hidden="true"></i>
+                <input type="search" name="q" placeholder="Buscar productos, marcas y más..." aria-label="Buscar productos, marcas y más">
+            </form>
         </div>
-        <a href="">Preguntas frecuentes </a>
+    </header>
 
+    <main>
+        <section aria-labelledby="tituloContacto">
+            <h1 id="tituloContacto">Contáctanos</h1>
 
+            <form class="formularioContacto" action="#" method="post">
+                <label for="contactoCorreo">Correo:</label>
+                <input type="email" name="contactoCorreo" id="contactoCorreo" autocomplete="email" required>
 
+                <label for="mensaje">Escribe tu mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50" required></textarea>
 
-        <h5>Gracias por su mensaje!</h5>
+                <button type="submit">Enviar</button>
+            </form>
 
+            <aside class="bloqueContacto" aria-label="Información de contacto y ayuda">
+                <h2>También puedes contactarnos</h2>
+                <p>
+                    <a href="mailto:secondlife_tech@gmail.com">
+                        <img src="img/iconoEmail.png" alt="Correo electrónico" title="Escribir un correo">
+                        secondlife_tech@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+34917377399">
+                        <img src="img/iconoTelefono.png" alt="Teléfono" title="Llamar a SecondLife Tech">
+                        917 37 73 99
+                    </a>
+                </p>
+                <h2 id="preguntasFrecuentes">Preguntas frecuentes</h2>
+                <a href="#preguntasFrecuentes">Consulta las preguntas frecuentes</a>
+            </aside>
+        </section>
+    </main>
 
-    </form>
+    <footer>
+        <section class="sobreNostrosFooter" aria-label="Sobre nosotros">
+            <p>Somos una empresa dedicada a dar una <em>segunda vida</em> a los dispositivos que todavía la merecen.</p>
+            <p>Esta idea surgió debido a un proyecto en común de varios compañeros de clase, porque queríamos reducir los residuos causados en el sector informático.</p>
+            <p><strong>2026 | Todos los derechos reservados | SecondLife Tech</strong></p>
+        </section>
+        <section class="contactoFooter" aria-label="Redes sociales y contacto">
+            <a class="iconoFooterContacto" href="https://www.instagram.com/" aria-label="Instagram"><img src="img/iconoInstagram.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.youtube.com/" aria-label="YouTube"><img src="img/IconoYoutube.png" alt=""></a>
+            <a class="iconoFooterContacto" href="https://www.tiktok.com/" aria-label="TikTok"><img src="img/IconoTikTok.png" alt=""></a>
+            <a class="iconoFooterContacto" href="mailto:secondlife_tech@gmail.com" aria-label="Enviar un correo"><img src="img/iconoEmail.png" alt=""></a>
+            <a class="iconoFooterContacto" href="tel:+34917377399" aria-label="Llamar por teléfono"><img src="img/iconoTelefono.png" alt=""></a>
+        </section>
+    </footer>
 </body>
 </html>
