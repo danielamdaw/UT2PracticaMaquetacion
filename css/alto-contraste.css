@@ -100,7 +100,6 @@ mark {
     color: #000000;
 }
 
-/* Ajustes de texto sobre superficies oscuras revisados con contraste WCAG AA. */
 .descripcionTarjeta,
 .breadcrumb,
 .breadcrumb li + li::before,
@@ -109,7 +108,6 @@ mark {
     color: #FFFFFF;
 }
 
-/* En el tema alternativo se elimina la fotografía del CTA para mantener contraste estable. */
 .cta {
     border: 2px solid #FFFFFF;
     background-color: #000000;
@@ -130,7 +128,7 @@ mark {
     color: #000000;
 }
 
-/* Indicador doble: el amarillo resalta sobre oscuro y el anillo negro sobre botones amarillos. */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -140,5 +138,3 @@ textarea:focus-visible {
     box-shadow: 0 0 0 5px #000000;
 }
 
-/* Ratios medidos con la fórmula WCAG: blanco/negro 21:1; verde/negro 15.61:1;
-   verde/#111111 14.04:1; coral/negro 7.57:1; negro/amarillo 19.56:1. */
